@@ -11,10 +11,17 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" />
+    <style>
+      .error{
+        background-color: red;
+        color:white;
+      }
+    </style>
   </head>
   <body>
     <div class="container-md mt-5 text-white">
       <div class="row">
+        
         <div class="col-md-4"></div>
         <div class="col-md-4">
           <h1>Courses</h1>
@@ -50,8 +57,12 @@
                 id="image"
               />
             </div>
+            
             <button type="submit" id="saveBtn" class="btn btn-success w-100">Save</button>
           </form>
+          <div class="alertContainer">
+
+          </div>
           
         </div>
         <div class="row mt-5 p-2 ">
@@ -62,13 +73,12 @@
                 <th scope="col-md-3">Image</th>
                 <th scope="col">Course</th>
                 <th scope="col">Instructor</th>
+                <th>Delete</th>
               </tr>
             </thead>
             <tbody>
               <tr class="mb-3">
-                <!-- <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td> -->
+                <!-- Values will come here -->
               </tr>
             </tbody>
           </table>
